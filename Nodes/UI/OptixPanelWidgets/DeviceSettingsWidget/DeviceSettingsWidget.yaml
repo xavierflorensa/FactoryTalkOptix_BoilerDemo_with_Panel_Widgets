@@ -1,0 +1,218 @@
+Name: DeviceSettingsWidget
+Id: g=8402525c1b9ebdce2fa8696478449de4
+Type: FolderType
+Children:
+- Name: DeviceSettingsWidget
+  Id: g=343e9a553a1648e3de95b91f6d877b43
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalAlignment
+    Id: g=549c07bf994e7924316348cddbff0611
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+  - Name: VerticalAlignment
+    Id: g=d1ee913d01ce840a25326b24e781dcd0
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+  - Name: Width
+    Id: g=27dbc5b57d8d50148d604a118de8127c
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Id: g=36d72e0b6d61b98af6b4ae703817bfff
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 240.0
+  - Name: NavigationPanel1
+    Id: g=f464311d8714dbfd2778c2696a59c6f1
+    Type: NavigationPanel
+    Children:
+    - Name: Panels
+      Id: g=c8371b43e4fcfbe62337a0806f1dcddf
+      Type: BaseObjectType
+      Children:
+      - Name: Panel1
+        Id: g=eb6800655708841e2535929c81930261
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=56f738fc19ea2c12986b93aa702d9cf2
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":47,"TextId":"Configuration"}
+        - Name: Panel
+          Id: g=ecd57d00ce7ea1aaae23c2cb5848c461
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FactoryTalkOptix_BoilerDemo_with_Panel_Widgets/UI/OptixPanelWidgets/DeviceSettingsWidget/DeviceSettingsWidgetComponents/Configuration"
+          Children:
+          - Name: Kind
+            Id: g=4d9d968e7d550836a6ebfc67d3d9a059
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":17}
+        - Name: AliasNode
+          Id: g=d84cc6cc04764fb6135810e03d71e398
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Children:
+          - Name: DynamicLink
+            Id: g=4c8b3aa541de043db34ea4a0f0fe99e1
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SystemNode@NodeId"
+      - Name: Panel2
+        Id: g=ff8800b675a331ba5128fc574dcbd3f2
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=7f709b75f146add1aaacf6b0d9cd2d29
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":47,"TextId":"ProductInformation"}
+        - Name: Panel
+          Id: g=c847f78a8edae8b60f83a86c0bc8aabb
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FactoryTalkOptix_BoilerDemo_with_Panel_Widgets/UI/OptixPanelWidgets/DeviceSettingsWidget/DeviceSettingsWidgetComponents/Product_Information"
+          Children:
+          - Name: Kind
+            Id: g=85296724ceb19854d09a9251523a62fa
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":17}
+        - Name: AliasNode
+          Id: g=87c7fde475d55846a906d9b9bf73c6af
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Children:
+          - Name: DynamicLink
+            Id: g=8b47410accdacc1b2beda9273bf5ce08
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SystemNode@NodeId"
+      - Name: Panel3
+        Id: g=85ec2da9b26228c00b615249226df188
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=9ce273001d2d704bf18d0ad7539cd37b
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":47,"TextId":"Diagnostics"}
+        - Name: Panel
+          Id: g=a18b04524d91564d27273b04088617eb
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FactoryTalkOptix_BoilerDemo_with_Panel_Widgets/UI/OptixPanelWidgets/DeviceSettingsWidget/DeviceSettingsWidgetComponents/Diagnostics"
+          Children:
+          - Name: Kind
+            Id: g=a1611b6a5b3267368ee1aa02058f966b
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":17}
+        - Name: AliasNode
+          Id: g=5b95de248b6f08282941c23f361fbec1
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Children:
+          - Name: DynamicLink
+            Id: g=026aa0e33b4678aeebda50f26c5851c6
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SystemNode@NodeId"
+    - Name: CurrentPanel
+      Id: g=48dbb81c819da1b378d2f90882748758
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Children:
+      - Name: Kind
+        Id: g=411ec00bd84655b768fad34767ce77b7
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":17}
+    - Name: Width
+      Id: g=0b226159de58237301dc742e127b2387
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 304.0
+    - Name: Height
+      Id: g=fe37f0e6b87dea9d4c4e04a7bab5ac34
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 240.0
+    - Name: HorizontalAlignment
+      Id: g=1774e93f382ed42ffc0a55e41ae63339
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=010e547c67c220d834920a4ff34e3b46
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: TopMargin
+      Id: g=9965b8c5dc400d57f4e2c65125a706dc
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: BottomMargin
+      Id: g=fd176df7367e4a123536a542dcc93b40
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: CurrentTabIndex
+      Id: g=c87edb18f9c388de9aabf87aa73a57e9
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Class: Reference
+      Target: ns=16;i=1181
+      Direction: Forward
+    - Class: Reference
+      Target: ns=16;i=1183
+      Direction: Forward
+  - Name: SystemNode
+    Id: g=be7f3688bca7a5d152038b7f8a09527f
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=e3083c575ad4e0ee24279a093392fcbe
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/System"
+  - Name: DeviceSettingsWidgetLogic
+    Id: g=bd839fda525d1919741f127a7a269cc3
+    Type: NetLogic
+- File: DeviceSettingsWidgetComponents/DeviceSettingsWidgetComponents.yaml
+- Name: ns=30;LibraryReference
+  Id: g=29d72f3f3fa73189175371be7eaae66c
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 30
+    },
+    "Body": {
+     "libraryGuid": "de905a58759b4ff38bbb66c9d44c67ad",
+     "objectGuid": "f2061f11aedc03d4e4c54bc7a745ec52",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }
